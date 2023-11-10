@@ -17,13 +17,19 @@
 
 // apply discount
 // X -> number (=userAge)
-// if (X < 18) then apply 20% -> come si fa il 20% di sconto?
-// }else {
-// if ( 18 <= X < 65 ) then apply 'none' -> il prezzo rimane uguale
-// }else {
-//     (X > 65) then apply 40% ->  come si fa il 40% di sconto?
-// }
 
+// // if (X < 18) then apply 20% 
+//     -> come si fa il 20% di sconto?{
+//         let 20% = parseInt(prompt( X * 0.2));
+//     }
+
+// // }else {
+// // if ( 18 <= X < 65 ) then apply 'none' -> il prezzo rimane uguale
+// // }else {
+// //     (X > 65) then apply 40%
+//     -> come si fa il 40% di sconto?{
+//     let 40% = parseInt(prompt( X * 0.4));
+// }
 
 // IF {
 //     (userAge < 18) then 'sconto del 20%'
