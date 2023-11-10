@@ -8,20 +8,41 @@
 
 
 
-quanti km vuoi percorrere?  userKmRequest
-quanti anni hai?            userAge
+// quanti km vuoi percorrere?  userKmRequest
+// quanti anni hai?            userAge
 
-IF (1 km = 0.21 €) {
-    quanto costa il viaggio in € in base a 'userKmRequest'?
-}
+// IF (1 km = 0.21 €) {
+//     quanto costa il viaggio in € in base a 'userKmRequest'?
+// }
 
-IF {
-    (userAge < 18) then 'sconto del 20%'
-} else {
-    ( 18 =< userAge < 65 ) then 'no sconto, try next time :)'
-} else {
-    ( userAge > 65) then 'sconto del 40%'
-}
+// apply discount
+// X -> number (=userAge)
+// if (X < 18) then apply 20% -> come si fa il 20% di sconto?
+// }else {
+// if ( 18 <= X < 65 ) then apply 'none' -> il prezzo rimane uguale
+// }else {
+//     (X > 65) then apply 40% ->  come si fa il 40% di sconto?
+// }
+
+
+// IF {
+//     (userAge < 18) then 'sconto del 20%'
+// } else {
+//     ( 18 <= userAge < 65 ) then 'no sconto, try next time :)'
+// } else {
+//     ( userAge > 65) then 'sconto del 40%'
+// }
+
+let userKmRequest = parseInt (prompt('How many Km are you going to travel?'));
+let userAge = parseInt (prompt('How old are you?'));
 
 
 
+
+
+
+
+
+
+
+document.getElementById('output').innerHTML = 'Ticket price: ' + ticketPrice;
