@@ -17,4 +17,11 @@ IF (1 km = 0.21 €) {
 
 IF {
     (userAge < 18) then 'sconto del 20%'
+} else {
+    ( 18 =< userAge < 65 ) then 'no sconto, try next time :)'
+} else {
+    ( userAge > 65) then 'sconto del 40%'
 }
+
+
+
