@@ -18,7 +18,19 @@ let userAge = parseInt (prompt('How old are you?'));
 
 if (!isNaN(userKmRequest) && !isNaN(userAge)) {
     let ticketPrice = userKmRequest * 0.21;
+
+    // STEP_2 sconto = calcola direttamente il risultato senza dover fare la sottrazione
+    if (userAge < 18) {
+        ticketPrice *= 0.8;
+    }
+    else if (userAge >= 65) {
+        ticketPrice *>= 0.6;
+    }
+
+
 } 
+
+
 
 // apply discount
 // X -> number (=userAge)
