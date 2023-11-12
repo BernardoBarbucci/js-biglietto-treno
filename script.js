@@ -14,16 +14,11 @@
 let userKmRequest = parseInt (prompt('How many Km are you going to travel?'));
 let userAge = parseInt (prompt('How old are you?'));
 
-// IF (1 km = 0.21 €) {
-//     quanto costa il viaggio in € in base a 'userKmRequest'?
-// }
+//  STEP_1  verfica se è un numero +  quanto costa il viaggio in € in base a 'userKmRequest'?
 
-if (1 === 0.21) {
-    let result = userKmRequest * 0.21;
-    alert('Your journey without discount is going to cost you: ' + result);
-} else {
-    alert('Use a real number.');
-}
+if (!isNaN(userKmRequest) && !isNaN(userAge)) {
+    let ticketPrice = userKmRequest * 0.21;
+} 
 
 // apply discount
 // X -> number (=userAge)
@@ -51,12 +46,4 @@ if (1 === 0.21) {
 
 
 
-
-
-
-
-
-
-
-
-document.getElementById('output').innerHTML = 'Ticket price: ' + ticketPrice;
+document.getElementById('output').innerHTML = ('Ticket price: ' + ticketPrice.toFixed(2));
