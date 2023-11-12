@@ -24,38 +24,16 @@ if (!isNaN(userKmRequest) && !isNaN(userAge)) {
         ticketPrice *= 0.8;
     }
     else if (userAge >= 65) {
-        ticketPrice *>= 0.6;
+        ticketPrice *= 0.6;
     }
 
 
-} 
+// STEP_3 printing del risultato
+    alert('Your ticket cost is: ' + ticketPrice.toFixed(2));
+}  else {
+    alert('Please enter valid numbers.');
+}
 
 
 
-// apply discount
-// X -> number (=userAge)
-
-// // if (X < 18) then apply 20% 
-//     -> come si fa il 20% di sconto?{
-//         let 20% = parseInt(prompt( X * 0.2));
-//     }
-
-// // }else {
-// // if ( 18 <= X < 65 ) then apply 'none' -> il prezzo rimane uguale
-// // }else {
-// //     (X > 65) then apply 40%
-//     -> come si fa il 40% di sconto?{
-//     let 40% = parseInt(prompt( X * 0.4));
-// }
-
-// IF {
-//     (userAge < 18) then 'sconto del 20%'
-// } else {
-//     ( 18 <= userAge < 65 ) then 'no sconto, try next time :)'
-// } else {
-//     ( userAge > 65) then 'sconto del 40%'
-// }
-
-
-
-document.getElementById('output').innerHTML = ('Ticket price: ' + ticketPrice.toFixed(2));
+document.getElementById('output').innerHTML = 'Ticket price: ' + ticketPrice;
