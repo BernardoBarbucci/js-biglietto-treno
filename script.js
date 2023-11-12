@@ -28,11 +28,7 @@ if (!isNaN(userKmRequest) && !isNaN(userAge)) {
     }
 
 // STEP_3 printing del risultato
-    alert('Your ticket cost is: ' + ticketPrice.toFixed(2));
+    document.getElementById('output').innerHTML =('Your ticket cost is: ' + ticketPrice + '€');
 }  else {
-    alert('Please enter valid numbers.');
+    document.getElementById('output').innerHTML =('Please enter valid numbers.');
 }
-
-
-
-document.getElementById('output').innerHTML = 'Ticket price: ' + ticketPrice;
