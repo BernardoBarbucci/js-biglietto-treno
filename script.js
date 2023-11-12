@@ -27,7 +27,6 @@ if (!isNaN(userKmRequest) && !isNaN(userAge)) {
         ticketPrice *= 0.6;
     }
 
-
 // STEP_3 printing del risultato
     alert('Your ticket cost is: ' + ticketPrice.toFixed(2));
 }  else {
